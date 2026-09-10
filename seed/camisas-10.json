@@ -1,0 +1,205 @@
+{
+ "slug": "camisas-10",
+ "title": "Copa do Mundo dos Camisas 10",
+ "subtitle": "Brasil, de 2000 em diante",
+ "label_a": "Clube",
+ "label_b": "Período",
+ "group_count": 8,
+ "pot_size": 8,
+ "rule_a": true,
+ "rule_b": true,
+ "competitors": [
+  {
+   "pot": 1,
+   "name": "Ronaldinho Gaúcho",
+   "attr_a": "Grêmio",
+   "attr_b": "05-09"
+  },
+  {
+   "pot": 1,
+   "name": "Djalminha",
+   "attr_a": "Dep. La Coruña",
+   "attr_b": "00-04"
+  },
+  {
+   "pot": 1,
+   "name": "Rivaldo",
+   "attr_a": "Barcelona",
+   "attr_b": "00-04"
+  },
+  {
+   "pot": 1,
+   "name": "Paulo Henrique Ganso",
+   "attr_a": "Santos",
+   "attr_b": "10-14"
+  },
+  {
+   "pot": 1,
+   "name": "Carlos Alberto",
+   "attr_a": "Fluminense",
+   "attr_b": "05-09"
+  },
+  {
+   "pot": 1,
+   "name": "Kaká",
+   "attr_a": "São Paulo",
+   "attr_b": "05-09"
+  },
+  {
+   "pot": 1,
+   "name": "Diego Ribas",
+   "attr_a": "Werder Bremen",
+   "attr_b": "05-09"
+  },
+  {
+   "pot": 1,
+   "name": "Felipe",
+   "attr_a": "Vasco",
+   "attr_b": "00-04"
+  },
+  {
+   "pot": 2,
+   "name": "Danilo Gabriel",
+   "attr_a": "Corinthians",
+   "attr_b": "15-19"
+  },
+  {
+   "pot": 2,
+   "name": "Alex de Souza",
+   "attr_a": "Cruzeiro",
+   "attr_b": "00-04"
+  },
+  {
+   "pot": 2,
+   "name": "Philippe Coutinho",
+   "attr_a": "Liverpool",
+   "attr_b": "15-19"
+  },
+  {
+   "pot": 2,
+   "name": "Marcelinho Carioca",
+   "attr_a": "Corinthians",
+   "attr_b": "00-04"
+  },
+  {
+   "pot": 2,
+   "name": "Juninho Paulista",
+   "attr_a": "Middlesbrough",
+   "attr_b": "00-04"
+  },
+  {
+   "pot": 2,
+   "name": "Oscar",
+   "attr_a": "Chelsea",
+   "attr_b": "10-14"
+  },
+  {
+   "pot": 2,
+   "name": "Renato Augusto",
+   "attr_a": "Corinthians",
+   "attr_b": "15-19"
+  },
+  {
+   "pot": 2,
+   "name": "Éverton Ribeiro",
+   "attr_a": "Flamengo",
+   "attr_b": "15-19"
+  },
+  {
+   "pot": 3,
+   "name": "Matheus Pereira",
+   "attr_a": "Cruzeiro",
+   "attr_b": "20-25"
+  },
+  {
+   "pot": 3,
+   "name": "Nenê",
+   "attr_a": "PSG",
+   "attr_b": "10-14"
+  },
+  {
+   "pot": 3,
+   "name": "Thiago Neves",
+   "attr_a": "Fluminense",
+   "attr_b": "05-09"
+  },
+  {
+   "pot": 3,
+   "name": "Jádson",
+   "attr_a": "Shakhtar",
+   "attr_b": "05-09"
+  },
+  {
+   "pot": 3,
+   "name": "Elano",
+   "attr_a": "Santos",
+   "attr_b": "05-09"
+  },
+  {
+   "pot": 3,
+   "name": "Ricardinho",
+   "attr_a": "Corinthians",
+   "attr_b": "00-04"
+  },
+  {
+   "pot": 3,
+   "name": "Lucas Paquetá",
+   "attr_a": "Flamengo",
+   "attr_b": "20-25"
+  },
+  {
+   "pot": 3,
+   "name": "Diego Souza",
+   "attr_a": "Sport",
+   "attr_b": "10-14"
+  },
+  {
+   "pot": 4,
+   "name": "Douglas",
+   "attr_a": "Grêmio",
+   "attr_b": "10-14"
+  },
+  {
+   "pot": 4,
+   "name": "Lucas Lima",
+   "attr_a": "Santos",
+   "attr_b": "15-19"
+  },
+  {
+   "pot": 4,
+   "name": "Gustavo Scarpa",
+   "attr_a": "Palmeiras",
+   "attr_b": "20-25"
+  },
+  {
+   "pot": 4,
+   "name": "Raphael Veiga",
+   "attr_a": "Palmeiras",
+   "attr_b": "20-25"
+  },
+  {
+   "pot": 4,
+   "name": "Giuliano",
+   "attr_a": "Internacional",
+   "attr_b": "10-14"
+  },
+  {
+   "pot": 4,
+   "name": "Alan Patrick",
+   "attr_a": "Internacional",
+   "attr_b": "20-25"
+  },
+  {
+   "pot": 4,
+   "name": "Claudinho",
+   "attr_a": "Bragantino",
+   "attr_b": "20-25"
+  },
+  {
+   "pot": 4,
+   "name": "Marcelinho Paraíba",
+   "attr_a": "Atlético-PR",
+   "attr_b": "00-04"
+  }
+ ]
+}

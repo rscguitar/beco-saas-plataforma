@@ -31,12 +31,25 @@ npm install
 npm run dev
 ```
 
-### 3. Vercel
+### 3. Popular a edição
+
+```bash
+export $(grep -v '^#' .env.local | xargs)
+node scripts/seed.mjs seed/camisas-10.json
+```
+
+Sobe os avatares para o Storage e grava o elenco. É idempotente: rodar de novo
+atualiza no lugar, sem duplicar. O script avisa quem ficou sem foto.
+
+Para acrescentar um avatar: ponha o `.webp` em `seed/avatars/` e registre o
+nome do competidor no `_index.json` da mesma pasta.
+
+### 4. Vercel
 
 Importe o repositório, cole `NEXT_PUBLIC_SUPABASE_URL` e
 `NEXT_PUBLIC_SUPABASE_ANON_KEY` nas variáveis de ambiente e publique.
 
-### 4. OBS
+### 5. OBS
 
 Adicione uma **Fonte de Navegador** apontando para
 `https://SEU-DOMINIO/overlay/camisas-10`, com largura 1920 e altura 1080.
@@ -72,14 +85,19 @@ em metades opostas e só podem se reencontrar na final.
 npm test
 ```
 
-Cobrem o que quebra em silêncio: 300 execuções do sorteio verificando as duas
-regras, o afrouxamento quando a lista não permite, os critérios de desempate,
-o pareamento clássico das oitavas e a resolução por pênaltis.
+Cobrem o que quebra em silêncio. No motor: 300 execuções do sorteio
+verificando as duas regras, o afrouxamento quando a lista não permite, os
+critérios de desempate, o pareamento clássico das oitavas e a resolução por
+pênaltis. No seed: potes cheios, nomes sem repetição, atributos preenchidos,
+os tetos que o sorteio exige, avatar órfão de quem saiu do elenco e arquivo
+grande demais para o overlay.
 
 ## Estrutura
 
 ```
 lib/engine/     motor puro, sem React nem rede — é o que os testes cobrem
+seed/           elenco e avatares da edição, com testes de consistência
+scripts/seed.mjs sobe avatares e grava o elenco (idempotente)
 lib/supabase.ts cliente; erro claro quando falta configuração
 lib/useEdition  carrega a edição e mantém Realtime
 components/     Stage (palco 1920×1080), GroupTables, Avatar
@@ -88,7 +106,11 @@ supabase/       migração: 5 tabelas, view de classificação, RLS
 
 ## Estado atual
 
-Esta é a fatia mínima: sorteio ponta a ponta com overlay ao vivo.
-Ainda não tem tabela de grupos, mata-mata, campeão nem upload de imagens —
-e **a escrita no banco está aberta**, sem autenticação. Fechar isso é a
-próxima fatia, junto com o Supabase Auth.
+Sorteio ponta a ponta com overlay ao vivo, e a edição `camisas-10` pronta
+para semear com 30 dos 32 avatares.
+
+**Faltam as fotos de Danilo Gabriel e Matheus Pereira.**
+
+Ainda não tem tabela de grupos, mata-mata nem campeão — e **a escrita no
+banco está aberta**, sem autenticação. Não publique em domínio público antes
+de fechar isso; é a próxima fatia, junto com o Supabase Auth.
