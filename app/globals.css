@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Identidade do programa: verde profundo, néon e laranja. */
+@theme {
+  --color-fundo:    #04220f;
+  --color-superf:   #073619;
+  --color-elevado:  #0b4522;
+  --color-linha:    #17542a;
+  --color-tinta:    #e9f7ec;
+  --color-tinta-2:  #b2d8bd;
+  --color-apagado:  #6e9e7e;
+  --color-laranja:  #ff7a1f;
+  --color-laranja-2:#df5c05;
+  --color-neon:     #3fe04e;
+  --color-linha-tb: #0a4423;
+}
+
+html, body { background: var(--color-fundo); color: var(--color-tinta); }
+
+/* O overlay é camada de vídeo: fundo transparente, sem rolagem. */
+body.overlay { background: transparent; overflow: hidden; }
