@@ -16,9 +16,13 @@ Latência típica na casa de 100 ms — imperceptível no ar.
 ### 1. Supabase
 
 Crie um projeto em [supabase.com](https://supabase.com), abra **SQL Editor** e
-execute `supabase/migrations/0001_init.sql`.
+execute `supabase/migrations/completo.sql` — é a junção das duas migrações,
+para você colar uma vez só.
 
 Depois, em **Project Settings → API**, copie a URL do projeto e a chave `anon`.
+
+Confira o resultado em `/diagnostico`: ele testa conexão, tabelas, view,
+bucket e elenco, e mostra o conserto de cada item que falhar.
 
 > A chave `anon` é pública por design e pode ir para o navegador.
 > A `service_role` **não** — ela não é usada em lugar nenhum deste código.
